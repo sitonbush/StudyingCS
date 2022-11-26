@@ -1,8 +1,10 @@
 # My Studying for Tech
 <br>
-### :smiley_cat: Study Notes for developers 📖###
 </br>
 
+### :smiley_cat: Study Notes for developers 📖
+<br>
+</br>
 ------------------------------
 #:shipit:index for pages#
 -MarkDown

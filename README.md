@@ -1,6 +1,6 @@
 # My Studying for Tech
 <br>
-### :smiley_cat: Study Notes for developers 📖
+### :smiley_cat: Study Notes for developers 📖###
 </br>
 
 ------------------------------

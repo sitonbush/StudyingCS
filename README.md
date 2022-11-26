@@ -4,4 +4,4 @@
 </br>
 
 - #### MarkDown
-  - [Markdown Studies](https://github.com/sitonbush/StudyingCS/blob/main/StudyMarkdown)
+  - [Markdown Studies](https://github.com/sitonbush/StudyingCS/blob/main/StudyMarkdown.md)

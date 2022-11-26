@@ -1,7 +1,6 @@
 # My Studying for Tech
-### :smiley_cat: Study Notes for developers 📖
-### :shipit:index for pages
-
-
+### :smiley_cat: Study Notes  📖
+<br>
+</br>
 - #### MarkDown
   - Markdown Studies

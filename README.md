@@ -1,2 +1,5 @@
-# StudyingCS
-Notes for Studying computer
+# My Studying for Tech
+
+### :smiley_cat: Study Notes for developers 📖
+
+#:shipit:index#

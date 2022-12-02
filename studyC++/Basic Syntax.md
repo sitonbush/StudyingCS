@@ -74,5 +74,15 @@ printf("%d\n",6%3);
 }
 ```
 
+-C언어는 boolean 자료형이 없다. 다만 0거짓, 그외는 참으로 표현된다.
+```
+#include <stdio.h>
+void main(void){
 
+int a=3;
+
+printf("%d\n",6>3);
+}
+```
+> 1을 반환한다.
 

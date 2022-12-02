@@ -90,3 +90,14 @@ printf("%d\n",6>3);
   - && 둘다 참일때 1 반환
   - || 둘중 하나가 참일때 1 반환
   - !  둘다 거짓일때 1반환 
+
+```
+#include <stdio.h>
+void main(void){
+
+int a=3;
+
+printf("%d\n",!1);
+}
+```
+

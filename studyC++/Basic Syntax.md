@@ -38,9 +38,7 @@ void main(void)
 void main(void){
 
 int a=3;
-
 a++;
-
 printf("%d\n",a);
 
 }
@@ -80,7 +78,6 @@ printf("%d\n",6%3);
 void main(void){
 
 int a=3;
-
 printf("%d\n",6>3);
 }
 ```
@@ -96,8 +93,46 @@ printf("%d\n",6>3);
 void main(void){
 
 int a=3;
-
 printf("%d\n",!1);
 }
 ```
+- 조건연산자  조건? 참:거짓  
+
+```
+#include <stdio.h>
+void main(void){
+
+printf("%d\n", 3>4? 1:0 );
+}
+```
+
+- sizeof 연산자 : sizeof(형)
+
+```
+#include <stdio.h>
+void main(void){
+
+printf("%d\n", sizeof(int) );
+}
+```
+
+- 1byte의 크기는 8bit 이다. 
+
+### 데이터를 표현하는 방식
+- bit
+- byte 8bit는 1byte이다.
+
+```
+#include <stdio.h>
+void main(void){
+
+	int num1 = 10;        //10진수
+	int num2 = 0xA;       //16진수 0x
+	int num3 = 012;       //8진수  0
+	int num4 = 0b1010;    //2진수  0b
+	
+	printf("%d,%d,%d,%d",num1, num2, num3, num4);
+}
+```
+> 결과 : 10, 10, 10, 10
 

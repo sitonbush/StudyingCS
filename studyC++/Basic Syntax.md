@@ -358,8 +358,10 @@ void main(void){
 	}
 		
 }
+```
 
 > scanf 이용
+
 ```
 #include <stdio.h>
 
@@ -374,7 +376,7 @@ void main(void){
 		}
 		
 }
-
+```
 
 ### 조건문- IF
 
@@ -416,9 +418,10 @@ void main(void){
 	}
 	
 }
-
+```
 
 >팩토리얼 만들기
+
 ```
 #include <stdio.h>
 

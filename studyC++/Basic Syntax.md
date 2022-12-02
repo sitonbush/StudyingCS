@@ -40,9 +40,8 @@ void main(void){
 int a=3;
 a++;
 printf("%d\n",a);
-
 }
-
+```
 
 ```
 #include <stdio.h>
@@ -51,9 +50,8 @@ void main(void){
 int a=3;
 printf("%d\n",a++);
 printf("%d\n",a);
-
 }
-
+```
 
 
 >출력 결과 3,4
@@ -61,6 +59,7 @@ printf("%d\n",a);
 
 
 나머지 연산자
+
 
 ```
 #include <stdio.h>
@@ -70,9 +69,10 @@ int a=3;
 
 printf("%d\n",6%3);
 }
-
+```
 
 -C언어는 boolean 자료형이 없다. 다만 0거짓, 그외는 참으로 표현된다.
+
 ```
 #include <stdio.h>
 void main(void){
@@ -81,9 +81,10 @@ int a=3;
 printf("%d\n",6>3);
 }
 ```
+
 > 1을 반환한다.
 
-- 논리연산자
+- 논리
   - && 둘다 참일때 1 반환
   - || 둘중 하나가 참일때 1 반환
   - !  둘다 거짓일때 1반환 
@@ -96,6 +97,7 @@ int a=3;
 printf("%d\n",!1);
 }
 ```
+
 - 조건연산자  조건? 참:거짓  
 
 ```
@@ -150,7 +152,7 @@ void main(void){
 심볼릭 상수는 변수처럼 이름을 지니는 상수이다. Const 키워드를 사용하는 방법과 매크로를 이용하는 방법이 있다.
 선언과 동시에 값을 대입해야 한다. 선언만 하면 컴파일 에러가 발생한다.
 
-'''
+```
 #include <stdio.h>
 
 void main(void){
@@ -158,7 +160,7 @@ void main(void){
 	A=3;   //compile error occurred.
 	printf("%d\n",A);
 }
-'''
+```
 
 >상수의 이름은 모두 대문자로 표시하고 두이상의 단어를 연결할 때에는 언더바('\_')를 사용한다.
 
@@ -166,6 +168,7 @@ void main(void){
 C언어는 선언만 하면 쓰레기값이 들어가 있다. (자바의 경우 0이 들어가 있음)
 
 ### 다른 자료형의 계산
+
 ```
 #include <stdio.h>
 
@@ -174,7 +177,9 @@ void main(void){
 	printf("%d\n",a);
 }
 ```
+
 묵시적 형변환-> 소수점 아래는 버림
+
 
 ```
 #include <stdio.h>
@@ -186,6 +191,7 @@ void main(void){
 ```
 
 위와 같이 출력하면 알 수없는 값이 나오는데 이는 "%d"로 출력된다. 이는 코드가 달라서이다!
+
 ```
 #include <stdio.h>
 
@@ -215,6 +221,7 @@ void main(void){
 }
 ```
 소문자-대문자 변환
+
 ```
 #include <stdio.h>
 
@@ -266,6 +273,7 @@ void main(void){
 ```
 -Do While
 
+
 ```
 #include <stdio.h>
 
@@ -278,7 +286,7 @@ void main(void){
 	}while(num > 10);
 	
 }
-
+```
 
 ### 반복문-for 문
 
@@ -308,7 +316,7 @@ void main(void){
 	}
 		
 }
-
+```
 
 <무한루프>
 
@@ -324,6 +332,7 @@ void main(void){
 	}
 		
 }
+```
 
 >구구단
 
@@ -339,6 +348,7 @@ void main(void){
 	}
 		
 }
+```
 
 >중첩포문
 
@@ -414,6 +424,7 @@ void main(void){
 		printf("양수가 아닙니다.");
 	}
 }
+```
 
 >팩토리얼 만들기
 
@@ -430,7 +441,7 @@ void main(void){
 	}
 	printf("factorial result is %d", result);		
 }
-
+```
 
 ------------------------------------------
 ### Switch Case문 만들기

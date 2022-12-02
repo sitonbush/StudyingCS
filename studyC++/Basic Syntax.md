@@ -200,5 +200,168 @@ void main(void){
 - GUI환경에서는 이벤트 환경에서 입출력이 다양하게 있다. printf는 console환경에서 사용
 
 
+### SCANF 함수
+-printf 함수의 상대적인 기능인 입력(키보드)의 기능을 지닌다.
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int a;
+	scanf("%d",&a);
+	printf("%d\n",a);
+
+}
+```
+소문자-대문자 변환
+```
+#include <stdio.h>
+
+void main(void){
+
+	char a;
+	scanf("%c" , &a);
+	int gap= 'A'-'a';
+	
+	printf("%c\n",a+gap);
+
+}
+```
+지금까진 자료형을 보았다. 
+---------------------------------------------
+제어
+
+### 반복문, 조건문
+
+###### 반복문
+- while
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int num = 0;
+	while(num < 3){
+	 printf("Hello \n");
+	 num++;
+		
+	}
+}
+```
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int num = 1;
+	while(num <=10){
+	 printf("%d\n", num);
+	 num++;
+		
+	}
+}
+```
+-Do While
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int num = 3;
+	do{
+	  num++;
+	  printf("%d\n", num);
+	}while(num > 10);
+	
+}
+```
+
+### 반복문-for 문
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int i = 0;
+	for(i=0; i<=10; i++){
+		printf("%d\n",i);
+	}	
+}
+```
+
+>아래와 같이 사용해도 동일하게 작동하지만 가독성은 떨어진다.
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int i =0;
+	for(; i<=10;){
+		printf("%d\n",i);
+		i++;
+	}
+		
+}
+```
+<무한루프>
+```
+#include <stdio.h>
+
+void main(void){
+
+	int i =0;
+	for(;;){
+		printf("%d\n",i);
+		i++;
+	}
+		
+}
+```
+>구구단
+```
+#include <stdio.h>
+
+void main(void){
+
+	int dan = 2;
+	int i;
+	for(i=1; i<10; i++){
+		printf("%d * %d = %d\n", dan, i, dan*i);
+	}
+		
+}
+
+>>중첩포문
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int dan, i;
+	
+	
+	for(dan=2; dan<10; dan++){
+		for(i=1; i<10; i++){
+			 printf("%d * %d = %d\n", dan, i, dan*i);
+		}
+		printf("\n");
+	}
+		
+}
+```
 
 
+
+
+
+
+
+
+- 

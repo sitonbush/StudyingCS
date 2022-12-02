@@ -392,6 +392,7 @@ void main(void){
 	}
 	
 }
+```
 
 >다른 예시 
 
@@ -415,6 +416,7 @@ void main(void){
 	}
 	
 }
+```
 
 >팩토리얼 만들기
 
@@ -437,9 +439,8 @@ void main(void){
 	}
 	printf("factorial result is %d", result);		
 	
-	
 }
-
+```
 
 
 

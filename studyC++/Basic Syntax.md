@@ -118,9 +118,9 @@ printf("%d\n", sizeof(int) );
 
 - 1byte의 크기는 8bit 이다. 
 
-<br>
-</br>
+
 ### 데이터를 표현하는 방식
+
 - bit
 - byte 8bit는 1byte이다.
 

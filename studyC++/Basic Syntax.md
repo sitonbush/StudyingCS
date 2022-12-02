@@ -402,13 +402,10 @@ void main(void){
 
 ```
 #include <stdio.h>
-
 void main(void){
-
 	int val;
 	printf("정수 입력: ");
 	scanf("%d", &val);
-	
 	if(val>0){
 		printf("양수를 입력하셨습니다.");
 	}else if(val ==0){
@@ -416,31 +413,56 @@ void main(void){
 	}else{
 		printf("양수가 아닙니다.");
 	}
-	
 }
-```
 
 >팩토리얼 만들기
+
+```
+#include <stdio.h>
+void main(void){
+	int factorial, result;
+	result=1;
+	printf("Input factorial: ");
+	scanf("%d", &factorial);
+	while(factorial>1){
+		result*=factorial;
+		factorial -= 1;
+	}
+	printf("factorial result is %d", result);		
+}
+
+
+------------------------------------------
+### Switch Case문 만들기
 
 ```
 #include <stdio.h>
 
 void main(void){
 
-	int factorial, result;
-	result=1;
+	int op;
 	
-	printf("Input factorial: ");
-	scanf("%d", &factorial);
+	printf("1. 짜장면 \n2. 짬뽕 \n3. 복음밥 \n 메뉴를 선택하세요: ");
 	
-	while(factorial>1){
-		result*=factorial;
-		factorial -= 1;
-	}
-	printf("factorial result is %d", result);		
+	scanf("%d",&op);
 	
+	switch(op){
+		case 1:
+			printf("3000원 입니다.");
+			break;
+		case 2:
+			printf("4000원 입니다.");
+			break;
+			
+		case 3:
+			printf("5000원 입니다.");
+			break;
+		default : 
+			printf("잘못입력하였습니다.");		 
+				 
+	} 
+		
 }
 ```
-
 
 

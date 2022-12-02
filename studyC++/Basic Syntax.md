@@ -355,13 +355,63 @@ void main(void){
 	}
 		
 }
+
+>> scanf 이용
 ```
+#include <stdio.h>
+
+void main(void){
+
+	int dan, i;
+	scanf("%d", &dan);
+	
+		
+		for(i=1; i<10; i++){
+		 	printf("%d * %d = %d\n", dan, i, dan*i);
+		}
+		
+}
+
+
+### 조건문- IF
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int val;
+	printf("정수 입력: ");
+	scanf("%d", &val);
+	
+	if(val>0){
+		printf("양수를 입력하셨습니다.");
+	}
+	
+}
+
+다른 예시 
+
+```
+#include <stdio.h>
+
+void main(void){
+
+	int val;
+	printf("정수 입력: ");
+	scanf("%d", &val);
+	
+	if(val>0){
+		printf("양수를 입력하셨습니다.");
+	}else if(val ==0){
+		printf("0 입니다.");
+	}else{
+		printf("양수가 아닙니다.");
+	}
+	
+}
 
 
 
 
 
-
-
-
-- 

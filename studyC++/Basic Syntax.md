@@ -416,12 +416,9 @@ void main(void){
 	}
 	
 }
-```
+
 
 >팩토리얼 만들기
-
-
-
 ```
 #include <stdio.h>
 

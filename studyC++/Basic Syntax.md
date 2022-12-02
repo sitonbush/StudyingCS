@@ -42,7 +42,7 @@ a++;
 printf("%d\n",a);
 
 }
-```
+
 
 ```
 #include <stdio.h>
@@ -54,7 +54,7 @@ printf("%d\n",a);
 
 }
 
-```
+
 
 >출력 결과 3,4
 ++이 앞에 뒤에 붙는지 차이: 실행시키고 나서 연산이 수행되는지 여부.
@@ -70,7 +70,7 @@ int a=3;
 
 printf("%d\n",6%3);
 }
-```
+
 
 -C언어는 boolean 자료형이 없다. 다만 0거짓, 그외는 참으로 표현된다.
 ```
@@ -278,7 +278,7 @@ void main(void){
 	}while(num > 10);
 	
 }
-```
+
 
 ### 반복문-for 문
 
@@ -308,8 +308,10 @@ void main(void){
 	}
 		
 }
-```
+
+
 <무한루프>
+
 ```
 #include <stdio.h>
 
@@ -322,8 +324,9 @@ void main(void){
 	}
 		
 }
-```
+
 >구구단
+
 ```
 #include <stdio.h>
 
@@ -337,7 +340,7 @@ void main(void){
 		
 }
 
->>중첩포문
+>중첩포문
 
 ```
 #include <stdio.h>
@@ -356,7 +359,7 @@ void main(void){
 		
 }
 
->> scanf 이용
+> scanf 이용
 ```
 #include <stdio.h>
 
@@ -390,7 +393,7 @@ void main(void){
 	
 }
 
-다른 예시 
+>다른 예시 
 
 ```
 #include <stdio.h>
@@ -411,6 +414,26 @@ void main(void){
 	
 }
 
+>팩토리얼 만들기
+```
+#include <stdio.h>
+
+void main(void){
+
+	int factorial, result;
+	result=1;
+	
+	printf("Input factorial: ");
+	scanf("%d", &factorial);
+	
+	while(factorial>1){
+		result*=factorial;
+		factorial -= 1;
+	}
+	printf("factorial result is %d", result);		
+	
+	
+}
 
 
 

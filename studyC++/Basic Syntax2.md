@@ -536,13 +536,15 @@ void main(void){
 - value: 값으로 전달
 - reference: 주소로 전달
 1.
-```void incrementByValue(int number){ 
+```
+void incrementByValue(int number){ 
 number ++;
 }
 ```
 
 2.
-```void incrementByValue(int* number){
+```
+void incrementByReference(int* number){
 (*number)++;
 }
 ```

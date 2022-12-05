@@ -4,7 +4,6 @@
 #include <stdio.h>
 
 int Add(int num1, int num2){
-	
 	return num1+num2;
 }
 
@@ -17,3 +16,22 @@ void main(void){
 	
 }
 ```
+다른방식
+
+```
+#include <stdio.h>
+
+int Add(int num1, int num2);
+void main(void){
+	int x, y, res;
+	x= 5; y=2;
+	
+	res= Add(x,y);
+	printf("%d\n",res);
+	
+}
+
+
+int Add(int num1, int num2){
+	return num1+num2;
+}

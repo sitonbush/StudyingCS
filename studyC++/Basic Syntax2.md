@@ -123,4 +123,4 @@ void main(void){
 }
 ```
 
->> result :3
+> result :3

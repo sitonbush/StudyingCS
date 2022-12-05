@@ -40,3 +40,55 @@ int Add(int num1, int num2){
 Return의 의미
 -함수를 빠져나간다.
 -값을 반환한다.
+
+
+### scanf, switch, 함수를 이용한다.
+
+```
+#include <stdio.h>
+double triangle(int x, int y){
+	double result= (double)x*y/2;
+	return result;
+}
+
+int rectangle(int x, int y){
+	return x*y;
+}
+
+double circle(int x){
+	return (double)(x*x*3.14);
+}
+
+
+void main(void){
+	//도형을 고릅니다. 
+	printf("1. 삼각형\n2.사각형\n3.원\n");
+	printf("도형을 고르세요\n");
+	int shape;
+	scanf("%d",&shape);
+	//x y값을 입력하세요
+	int x, y;
+	printf("x,y값을 입력하세요\n");
+	scanf("%d %d",&x,&y);
+	
+	switch(shape){
+		case 1:
+			printf("%.2f 입니다",triangle(x,y));
+		break;
+		
+		case 2:
+			printf("%d 입니다",rectangle(x,y));
+		break;
+		
+		case 3:
+			printf("%.2f입니다",circle(x));
+		break;
+		default:
+			printf("잘못 입력하였어요\n");
+		
+	} 
+
+}```
+
+
+

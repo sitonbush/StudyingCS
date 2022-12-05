@@ -549,4 +549,34 @@ void incrementByReference(int* number){
 }
 ```
 
-2번의 경우 경우 포인터 값으로 받아서 number의 값이 증가하였음.
+2번의 경우 경우 포인터 값으로 받아서 number의 값이 증가한다.
+
+```
+#include <stdio.h>
+
+void incrementByValue(int number){
+	number++;
+}
+
+void incrementByReference(int* number){
+	(*number)++;
+}
+	
+
+
+
+
+void main(void){
+	int number=2;
+	
+	incrementByValue(number);
+	printf("number: %d\n",number);
+	
+	incrementByReference(&number);
+	printf("number: %d\n",number);
+	
+	
+}
+```
+
+

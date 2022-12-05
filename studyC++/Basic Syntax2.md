@@ -575,4 +575,6 @@ void main(void){
 }
 ```
 
+#### 포인터 대상의 CONST 
+
 

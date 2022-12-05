@@ -35,3 +35,8 @@ void main(void){
 int Add(int num1, int num2){
 	return num1+num2;
 }
+```
+
+Return의 의미
+-함수를 빠져나간다.
+-값을 반환한다.

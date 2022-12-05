@@ -124,3 +124,37 @@ void main(void){
 ```
 
 > result :3
+
+```
+#include <stdio.h>
+
+//전역변수 
+int count =0;
+
+void test1(void){
+	count++;
+}
+
+void test2(void){
+	int count=0;
+	count++;
+}
+
+
+void main(void){
+
+	test2();
+	test2();
+	test2();
+	printf("%d",count);
+		
+	return 0; 
+
+}
+
+```
+
+> result=0;
+
+지역변수는 함수가 끝나면 소멸되기 때문에 결과값은 0이다.
+

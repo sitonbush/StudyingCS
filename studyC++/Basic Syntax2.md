@@ -531,3 +531,18 @@ void main(void){
 	}
 }
 ```
+
+### Call by Value vs Call by Reference
+- value: 값으로 전달
+- reference: 주소로 전달
+1.
+```void incrementByValue(int number){ 
+number ++;
+}
+
+2.
+```void incrementByValue(int* number){
+(*number)++;
+}
+
+2번의 경우 경우 포인터 값으로 받아서 number의 값이 증가하였음.

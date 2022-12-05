@@ -158,3 +158,49 @@ void main(void){
 
 지역변수는 함수가 끝나면 소멸되기 때문에 결과값은 0이다.
 
+
+#### 기억클래스(Storage Class)
+ - 자동변수  :default
+ - 정적변수😙  : 전역변수와 비슷하나 차이점이 존재함. 원시 프로그램의 내부 어디서나 사용이 가능하다. 
+ - 외부변수 : 모든 원시프로그램에 걸쳐 사용되는 변수이다.
+ - 레지스터변수 : 지역변수에서만 사용이 가능하고, 고속 연산용 변수이다.
+
+
+😲**전역변수**
+STATIC 실행하면, 메모리에 저장됨. 
+
+```
+#include <stdio.h>
+
+//전역변수 
+
+void multiply (int x){
+	static int count=0;	
+	count++;
+	printf("거듭제곱은 : %d\n",x*x);
+	printf("count : %d",count);
+
+}
+
+
+
+void main(void){
+
+	while(1){
+		int x;
+		scanf("%d",&x);
+		if(x==0){
+			break;
+		}
+		multiply(x);
+	}
+
+		
+	return 0; 
+
+}
+```
+
+> COUNT가 누적됨을 확인할 수 있다. STATIC이 붙어 있지 않으면 COUNT는 계속 0이다.
+> STATIC변수는 선언한 함수에서만 접근이 가능하고(접근이 외부에서 안된다-전역변수와 차이점), 대신 함수가 종료되도 메모리에 유지됨.
+

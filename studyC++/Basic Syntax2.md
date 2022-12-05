@@ -398,13 +398,13 @@ arr == &arr[0]
 
 
 ### 다차원 배열과 포인터
-arr == &arr[0][0]
-*arr == arr[0][0]
-*(arr+1) == arr[1][0]
-*(arr+2) == ]arr[2][0]
+ - arr == &arr[0][0]
+ - *arr == arr[0][0]
+ - *(arr+1) == arr[1][0]
+ - *(arr+2) == ]arr[2][0]
 
-*(*(arr+1)+1) == arr[1][1]
-*(*(arr+1)+2) == arr[1][2]
+ - *(*(arr+1)+1) == arr[1][1]
+ - *(*(arr+1)+2) == arr[1][2]
 
 
 ```
@@ -465,4 +465,16 @@ void main(void){
 }
 ```
 
+#### 문자열
 
+```
+#include <stdio.h>
+
+void main(void){
+
+	char str[6] ="Apple";
+	printf("%s",str);
+	 	
+}
+```
+str은 문자열의 배열 주소가 나타나야 하는데 Apple이 나타난다.

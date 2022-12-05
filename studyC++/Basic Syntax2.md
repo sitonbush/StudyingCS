@@ -482,4 +482,52 @@ void main(void){
 
 
 ### 함수와 포인터
+- 함수를 호출하면서 매개변수로 배열을 넘겨주는 방법이 없다.
+- 함수 내에서 배열에 접근할 수 잇도록 할려면 배열의 주소값을 전달해야 한다.
 
+```
+#include <stdio.h>
+
+int arrSum(int *x, int len){ //포인트 변수로 받아줌
+	int i, sum=0;
+	for(i=0; i<len; i++){
+	 	sum+=*(x+i);
+	 	 	
+	}
+	
+	return sum;
+}
+
+void main(void){
+	int arr[5] = {1,2,3,4,5};
+	int res;
+	res = arrSum(arr, sizeof(arr)/sizeof(int)); //arr[0]의 주소임. size구하는 방법 특이함.. :)
+	printf("%d\n", res);
+	
+}
+```
+
+위에서는 포인터로 넘겨주기 때문에 함수에서 arr에 직접 변경이 가능함. (이전에 함수는 파라미터는 값을 바꿀수 없었음)
+```
+#include <stdio.h>
+
+void arrTest(int *x, int len){
+	int i, sum=0;
+	for(i=0; i<len; i++){
+	 	*(x+i) *= 2;	 	
+	}
+	
+}
+
+
+
+void main(void){
+	int arr[5] = {1,2,3,4,5};
+	int i;
+	arrTest(arr, sizeof(arr)/sizeof(int));
+	
+	for(i=0; i<sizeof(arr)/sizeof(int); i++){
+		printf("%d\t",arr[i]);
+	}
+}
+```

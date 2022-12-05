@@ -561,10 +561,6 @@ void incrementByValue(int number){
 void incrementByReference(int* number){
 	(*number)++;
 }
-	
-
-
-
 
 void main(void){
 	int number=2;

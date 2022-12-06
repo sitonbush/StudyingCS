@@ -750,4 +750,35 @@ int main(void){
 }
 ```
 위의 경우에도 [Error] assignment of read-only variable 'ptr' 가 발생한다.
+
+```
+#include <stdio.h>
+
+void ShowArr(int *arr, int len){
+	int i;
+	for(i=0; i<len; i++){
+	printf("%d ",*(arr+i));
+	}
+	printf("\n");
+	
+}
+
+
+
+void main(void){
+	
+ int arr1[3] = {1,2,3};
+ int arr2[5] = {4,5,6,7,8};
+ 
+ int lenarr1 = sizeof(arr1)/sizeof(int);
+ ShowArr(arr1, lenarr1);
+ 
+  int lenarr2 = sizeof(arr2)/sizeof(int);
+  ShowArr(arr2, lenarr2);	
+ 
+ 
+ return 0; 
+
+}
+```
  

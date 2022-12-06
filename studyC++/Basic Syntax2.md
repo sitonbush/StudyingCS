@@ -575,6 +575,33 @@ void main(void){
 }
 ```
 
+swap 알고리즘
+
+```
+#include <stdio.h>
+
+void Swap(int* a, int* b){
+	int temp;
+	temp = *a;
+	*a= *b;
+	*b= temp;
+	
+}
+
+int main(void){
+	int num1 =5;
+	int num2= 10;
+	printf("num1 : %d\tnum2: %d\n",num1, num2);
+	
+	Swap(&num1, &num2);
+	printf("num1: %d\tnum2 :%d\n",num1, num2);
+	return 0;
+	
+	
+}
+```
+
+
 #### 포인터 대상의 CONST 
 
 

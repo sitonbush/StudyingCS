@@ -603,4 +603,50 @@ int main(void){
 **C는 swap할때 포인터 변수 사용해야함. 일반변수는 값이 소멸해서 바뀌지 않음(다른 언어와 차이).
 **
 
+😎 내가 짠 swap을 이용한 버블정렬
+
+```
+#include <stdio.h>
+
+void Swap(int *a, int*b){
+	int temp;
+	temp = *a;
+	*a= *b;
+	*b= temp;
+}
+
+
+
+void Sort(int *arr, int arrlen){
+	int i, j;
+	for(i=0; i<arrlen-1; i++){
+		for(j=0; j<arrlen-1-i; j++){
+			if(*(arr+j)>*(arr+j+1)){
+				Swap(arr+j, arr+1+j);
+			}
+		}
+	}
+}
+
+
+int main(void){
+	int arr[5];
+	int i, arrlen;
+	
+	arrlen = sizeof(arr)/sizeof(int);
+	for(i=0; i<arrlen; i++){
+	
+		printf("arr[%d]:",i);
+		scanf("%d",&arr[i]);
+	}
+
+	Sort(arr, arrlen);
+
+	for(i=0; i<arrlen; i++)
+		printf("arr[%d]:%d\n",i,arr[i]);
+			
+	
+	return 0;
+}
+```
 
